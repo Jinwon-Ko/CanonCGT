@@ -1,0 +1,55 @@
+dataset:
+
+    num_workers: 8
+    batch_size: 9
+    kk_batch_size: 3
+    uu_batch_size: 6
+    n_anchors_per_style: 50
+    n_refers_per_anchor: 1
+
+    random_flip: True
+    random_crop: True
+
+    mean: [0., 0., 0.]
+    std: [1., 1., 1.]
+
+
+training:
+
+    epochs: 50   # 50
+    optim: 'AdamW'
+    base_lr: 0.00010
+    weight_decay: 0.00005
+    scheduler: 'CosineAnnealingWarmUpRestarts'   #
+    gamma: 0.8
+    T_0: 60
+    T_up: 10
+    lr_max: 0.00010
+    lr_min: 0.00002
+
+    loss_canonical_coef: 1
+    loss_styler_coef: 1
+    loss_recon_coef: 1
+    loss_perceptual_coef: 0.05
+
+
+testing:
+
+    start_eval_epoch: 5
+    eval_epoch: 1
+    resol: '480p'     # ['480p', '4k']
+
+    n_contents: 100              # in test
+
+network:
+
+    n_points: 17
+    hidden_dim: 64
+    style_token_dim: 64
+
+    n_down_layer: 3
+    n_attn_module: 3
+    n_enc_block: [2, 2, 2]
+    n_dec_block: [2, 2, 2]
+    n_enc_heads: [4, 4, 4]
+    n_dec_heads: [1, 1, 1]
