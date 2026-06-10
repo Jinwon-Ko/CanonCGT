@@ -7,9 +7,7 @@ Official code for **"CanonCGT: Reference-Based Color Grading via Canonical Pivot
 
 ## Introduction
 
-We present **CanonCGT**, a reference-based color grading framework based on a canonical pivot representation.
-
-Our key idea is to first map the input image into a style-neutral canonical domain and then apply the reference-driven grading style from this canonical representation.
+We present **CanonCGT**, a reference-based color grading framework based on a canonical pivot representation. Our key idea is to first map the input image into a style-neutral canonical domain and then apply the reference-driven grading style from this canonical representation.
 
 We also introduce **DP-CGT**, a dual-phase training strategy that combines supervised preset learning and self-supervised refinement for robust generalization to diverse reference images.
 
@@ -43,13 +41,11 @@ They can also be downloaded from [here](https://drive.google.com/file/d/1SqzCXjd
 
 You can run a demo with pretrained models to perform reference-based color grading on your own images.
 
-Run demo with:
-
 ```bash
 $ cd root/CanonCGT/
 $ python demo.py \
     --gpu 0 \
-    --pretrained_path ./pretrained/TODO.pth \
+    --pretrained_path ./pretrained/SSL.pth \
     --inp_path SET_YOUR_INPUT_PATH \
     --ref_path SET_YOUR_REFERENCE_PATH \
     --out_path SET_YOUR_OUTPUT_PATH
