@@ -18,8 +18,7 @@ We also introduce **DP-CGT**, a dual-phase training strategy that combines super
 ## Preparation
 
 1. Installation
-
-Create conda environment:
+   Create conda environment:
 
 ```bash
 $ conda create -n CanonCGT python=3.9 anaconda
@@ -30,8 +29,7 @@ $ pip install pyyaml scikit-learn lpips
 ```
 
 2. Pretrained models
-
-Pretrained models will be available in:
+   Pretrained models will be available in:
 
 ```bash
 root/CanonCGT/pretrained/
