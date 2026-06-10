@@ -1,4 +1,4 @@
-<img width="150" height="150" alt="image" src="https://github.com/user-attachments/assets/9ddb8302-ee91-4b18-8035-c71d8ba50316" /># [CVPR 2026] CanonCGT: Reference-Based Color Grading via Canonical Pivot Representation.
+# [CVPR 2026] CanonCGT: Reference-Based Color Grading via Canonical Pivot Representation.
 
 ### Jinwon Ko, Keunsoo Ko, and Chang-Su Kim.
 
