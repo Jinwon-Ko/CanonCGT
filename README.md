@@ -1,4 +1,4 @@
-# [CVPR 2026] CanonCGT: Reference-Based Color Grading via Canonical Pivot Representation.
+<img width="150" height="150" alt="image" src="https://github.com/user-attachments/assets/9ddb8302-ee91-4b18-8035-c71d8ba50316" /># [CVPR 2026] CanonCGT: Reference-Based Color Grading via Canonical Pivot Representation.
 
 ### Jinwon Ko, Keunsoo Ko, and Chang-Su Kim.
 
@@ -8,14 +8,14 @@ Official code for **"CanonCGT: Reference-Based Color Grading via Canonical Pivot
 <img src="https://github.com/Jinwon-Ko/CanonCGT/blob/main/assets/Overview.png" alt="overview" width="100%" height="70%" border="10"/>
 
 
-## Introduction
+## 📝 Introduction
 
 We present **CanonCGT**, a reference-based color grading framework based on a canonical pivot representation. Our key idea is to first map the input image into a style-neutral canonical domain and then apply the reference-driven grading style from this canonical representation.
 
 We also introduce **DP-CGT**, a dual-phase training strategy that combines supervised preset learning and self-supervised refinement for robust generalization to diverse reference images.
 
 
-## Preparation
+## ⚙️ Preparation
 
 ### 1. Installation
 
@@ -40,7 +40,7 @@ root/CanonCGT/pretrained/
 They can also be downloaded from [here](https://drive.google.com/file/d/1SqzCXjdJ95TAhDYY9Z4TaQPuoqlEyfkT/view?usp=sharing).
 
 
-## Demo
+## 🚀 Demo
 
 You can run a demo with pretrained models to perform reference-based color grading on your own images.
 
@@ -56,17 +56,20 @@ $ python demo.py \
 
 The color-graded result will be saved to `SET_YOUR_OUTPUT_PATH`
 
-## Dataset
-will be updated
 
-## Train
-will be updated
-
-## Test
+## 📂 Dataset
 will be updated
 
 
-## Results
+## 🏋️ Train
+will be updated
+
+
+## 🧪 Evaluation
+will be updated
+
+
+## 🎨 Results
 
 Below shows our color grading results. For each pair, the left image shows the input and the right image shows the color-graded output using the inset reference image. CanonCGT produces photorealistic color grading that matches the tonal mood, lighting, and color temperature of the reference while preserving color harmony and scene structure.
 
