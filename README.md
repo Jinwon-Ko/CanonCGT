@@ -1,4 +1,5 @@
 # [CVPR 2026] CanonCGT: Reference-Based Color Grading via Canonical Pivot Representation.
+
 ### Jinwon Ko, Keunsoo Ko, and Chang-Su Kim.
 
 Official code for **"CanonCGT: Reference-Based Color Grading via Canonical Pivot Representation"** in CVPR 2026. 
