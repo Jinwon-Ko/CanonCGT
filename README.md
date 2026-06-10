@@ -17,7 +17,7 @@ We also introduce **DP-CGT**, a dual-phase training strategy that combines super
 
 ## Preparation
 
-1. Installation
+### 1. Installation
 
 Create conda environment:
 
@@ -29,7 +29,7 @@ $ pip install opencv-python-headless==4.10.0.82
 $ pip install pyyaml scikit-learn lpips
 ```
 
-2. Pretrained models
+### 2. Pretrained models
 
 Pretrained models will be available in:
 
