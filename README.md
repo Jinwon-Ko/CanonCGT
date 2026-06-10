@@ -14,8 +14,9 @@ We present **CanonCGT**, a reference-based color grading framework based on a ca
 We also introduce **DP-CGT**, a dual-phase training strategy that combines supervised preset learning and self-supervised refinement for robust generalization to diverse reference images.
 
 
-## Installation
+## Preparation
 
+1. Installation
 Create conda environment:
 
 ```bash
@@ -26,16 +27,13 @@ $ pip install opencv-python-headless==4.10.0.82
 $ pip install pyyaml scikit-learn lpips
 ```
 
-
-## Pretrained Models
-
+2. Pretrained models
 Pretrained models will be available in:
 
 ```bash
 root/CanonCGT/pretrained/
 ```
 
-<!-- TODO: Add pretrained model link -->
 They can also be downloaded from [here](https://drive.google.com/file/d/1SqzCXjdJ95TAhDYY9Z4TaQPuoqlEyfkT/view?usp=sharing).
 
 
@@ -67,7 +65,7 @@ The color-graded result will be saved to `SET_YOUR_OUTPUT_PATH`
 
 ## Results
 
-Below shows our color grading results.
+Below shows our color grading results. For each pair, the left image shows the input and the right image shows the color-graded output using the inset reference image. CanonCGT produces photorealistic color grading that matches the tonal mood, lighting, and color temperature of the reference while preserving color harmony and scene structure.
 
 <img src="https://github.com/Jinwon-Ko/CanonCGT/blob/main/assets/More_results_CanonCGT.png" alt="results" width="100%" height="70%" border="10"/>
 
