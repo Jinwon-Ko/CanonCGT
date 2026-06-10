@@ -4,6 +4,8 @@
 Official code for **"CanonCGT: Reference-Based Color Grading via Canonical Pivot Representation"** in CVPR 2026. 
 [[arXiv]](https://arxiv.org/pdf/2606.01638) [[paper]](https://openaccess.thecvf.com/content/CVPR2026/papers/Ko_CanonCGT_Reference-Based_Color_Grading_via_Canonical_Pivot_Representation_CVPR_2026_paper.pdf) [[video]](https://www.youtube.com/watch?v=NeXm4dkH_-k&t=5s)
 
+<img src="https://github.com/Jinwon-Ko/CanonCGT/blob/main/assets/Overview.png" alt="overview" width="100%" height="70%" border="10"/>
+
 
 ## Introduction
 
@@ -52,5 +54,21 @@ $ python demo.py \
 ```
 
 The color-graded result will be saved to `SET_YOUR_OUTPUT_PATH`
+
+## Dataset
+
+
+## Train
+
+
+## Test
+
+
+
+## Results
+
+Below shows our color grading results.
+
+<img src="https://github.com/Jinwon-Ko/CanonCGT/blob/main/assets/More_results_CanonCGT.png" alt="results" width="100%" height="70%" border="10"/>
 
 
