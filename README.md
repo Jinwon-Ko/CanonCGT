@@ -18,6 +18,7 @@ We also introduce **DP-CGT**, a dual-phase training strategy that combines super
 ## Preparation
 
 1. Installation
+
 Create conda environment:
 
 ```bash
@@ -29,6 +30,7 @@ $ pip install pyyaml scikit-learn lpips
 ```
 
 2. Pretrained models
+
 Pretrained models will be available in:
 
 ```bash
@@ -55,13 +57,13 @@ $ python demo.py \
 The color-graded result will be saved to `SET_YOUR_OUTPUT_PATH`
 
 ## Dataset
-
+will be updated
 
 ## Train
-
+will be updated
 
 ## Test
-
+will be updated
 
 
 ## Results
