@@ -103,7 +103,6 @@ $ cd root/CanonCGT/
 $ python main.py \
     --gpu 0 \
     --yaml Stage1_style_encoder \
-    --host server \
     --run_mode train
 ```
 
@@ -113,7 +112,6 @@ After training the grade extractor, save the style centroids:
 $ python main.py \
     --gpu 0 \
     --yaml Stage1_style_encoder \
-    --host server \
     --run_mode test \
     --load
 ```
@@ -126,7 +124,6 @@ Next, train the canonicalizer and the grader using the supervised paired dataset
 $ python main.py \
     --gpu 0 \
     --yaml Stage1_canonicalizer \
-    --host server \
     --run_mode train
 ```
 
@@ -134,7 +131,6 @@ $ python main.py \
 $ python main.py \
     --gpu 0 \
     --yaml Stage1_styler \
-    --host server \
     --run_mode train
 ```
 
@@ -146,7 +142,6 @@ Then, fine-tune the full CanonCGT framework in an end-to-end manner.
 $ python main.py \
     --gpu 0 \
     --yaml Stage2_end_to_end_finetuning \
-    --host server \
     --run_mode train
 ```
 
@@ -159,7 +154,6 @@ This phase improves the generalization ability of CanonCGT to diverse real-world
 $ python main.py \
     --gpu 0 \
     --yaml Stage3_SSL_training_Flickr2K_PPR10K_LSDIR \
-    --host server \
     --run_mode train
 ```
 
@@ -178,7 +172,6 @@ You can evaluate CanonCGT using a pretrained or trained model with:
 $ python main.py \
     --gpu 0 \
     --yaml Stage3_SSL_training_Flickr2K_PPR10K_LSDIR \
-    --host server \
     --run_mode eval \
     --load \
     --viz
