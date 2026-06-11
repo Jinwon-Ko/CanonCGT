@@ -93,9 +93,9 @@ CanonCGT is trained using **DP-CGT**, a dual-phase training strategy consisting 
 In Phase 1, CanonCGT is trained using the supervised paired dataset constructed from MIT-Adobe FiveK and Lightroom presets.  
 This phase learns the canonical pivot representation and the reference-based grading process from preset-based paired data.
 
-#### Phase 1-A: Style Encoder Training
+#### Phase 1-A: Grade Extractor Training
 
-First, train the style encoder to extract grading style representations from preset-transformed images.
+First, train the grade extractor to encode tonal characteristics from preset-transformed images.
 
 ```bash
 $ cd root/CanonCGT/
@@ -106,7 +106,7 @@ $ python main.py \
     --run_mode train
 ```
 
-After training the style encoder, save the style centroids:
+After training the grade extractor, save the style centroids:
 
 ```bash
 $ python main.py \
