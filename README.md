@@ -1,5 +1,7 @@
 # [CVPR 2026] CanonCGT: Reference-Based Color Grading via Canonical Pivot Representation.
 
+### Jinwon Ko, Keunsoo Ko, and Chang-Su Kim.
+
 Official code for **"CanonCGT: Reference-Based Color Grading via Canonical Pivot Representation"** in CVPR 2026. 
 [[arXiv]](https://arxiv.org/pdf/2606.01638) [[paper]](https://openaccess.thecvf.com/content/CVPR2026/papers/Ko_CanonCGT_Reference-Based_Color_Grading_via_Canonical_Pivot_Representation_CVPR_2026_paper.pdf) [[video]](https://www.youtube.com/watch?v=NeXm4dkH_-k&t=5s)
 
@@ -50,7 +52,6 @@ $ python demo.py \
     --inp_path SET_YOUR_INPUT_PATH \
     --ref_path SET_YOUR_REFERENCE_PATH \
     --out_path SET_YOUR_OUTPUT_PATH
-│   └── preset_links.md
 ```
 
 The color-graded result will be saved to `SET_YOUR_OUTPUT_PATH`
@@ -188,7 +189,7 @@ The evaluation results and visualized outputs will be saved to the output direct
 
 ## 🎨 Results
 
-Below shows our color grading results. For each pair, the left image shows the input and the right image shows the color-graded output using the inset reference image. CanonCGT produces photorealistic color grading that matches the tonal mood, lighting, and color temperature of the reference while preserving color harmony and scene structure.
+The figure below shows our color grading results. For each pair, the left image shows the input and the right image shows the color-graded output using the inset reference image. CanonCGT produces photorealistic color grading that matches the tonal mood, lighting, and color temperature of the reference while preserving color harmony and scene structure.
 
 <img src="https://github.com/Jinwon-Ko/CanonCGT/blob/main/assets/More_results_CanonCGT.png" alt="results" width="100%" height="70%" border="10"/>
 
