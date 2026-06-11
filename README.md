@@ -173,11 +173,10 @@ $ python main.py \
     --gpu 0 \
     --yaml Stage3_SSL_training_Flickr2K_PPR10K_LSDIR \
     --run_mode eval \
-    --load \
-    --viz
+    --load
 ```
 
-The evaluation results and visualized outputs will be saved to the output directory specified in the corresponding configuration file.
+The evaluation results will be saved to the output directory specified in the corresponding configuration file.
 
 
 ## 🎨 Results
