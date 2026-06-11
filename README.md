@@ -157,7 +157,7 @@ $ python main.py \
     --run_mode train
 ```
 
-Alternatively, you can run the full training pipeline with:
+Alternatively, you can run **the full training pipeline** with:
 
 ```bash
 $ bash run.sh
