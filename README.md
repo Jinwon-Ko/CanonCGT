@@ -60,7 +60,7 @@ The color-graded result will be saved to `SET_YOUR_OUTPUT_PATH`
 
 We use both supervised paired data and unsupervised image collections for training CanonCGT.
 
-### Supervised Paired Dataset
+### 1. Supervised Paired Dataset
 
 For supervised preset learning, we construct a paired dataset from the **MIT-Adobe FiveK** dataset.  
 Specifically, we use the Expert C version as the canonical target and generate preset-transformed images using Lightroom presets.
@@ -71,7 +71,7 @@ Instead, we provide the source links to the presets used in our experiments, so 
 - [MIT-Adobe FiveK Dataset](https://data.csail.mit.edu/graphics/fivek/)
 - [Lightroom preset source links](./assets/lightroom_preset_links.md)
 
-### Unsupervised Dataset
+### 2. Unsupervised Dataset
 
 For self-supervised refinement, we use diverse unpaired image datasets from multiple domains.
 
