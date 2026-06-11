@@ -50,14 +50,40 @@ $ python demo.py \
     --inp_path SET_YOUR_INPUT_PATH \
     --ref_path SET_YOUR_REFERENCE_PATH \
     --out_path SET_YOUR_OUTPUT_PATH
+│   └── preset_links.md
 ```
 
 The color-graded result will be saved to `SET_YOUR_OUTPUT_PATH`
 
 
 ## 📂 Dataset
-will be updated
 
+We use both supervised paired data and unsupervised image collections for training CanonCGT.
+
+Please download each dataset from its official source:
+
+### Supervised Paired Dataset
+
+For supervised preset learning, we construct a paired dataset from the **MIT-Adobe FiveK** dataset.  
+Specifically, we use the Expert C version as the canonical target and generate preset-transformed images using Lightroom presets.
+
+Due to potential license restrictions, we do **not** redistribute the Lightroom presets or the generated paired dataset.
+Please download the MIT-Adobe FiveK dataset from the official website and prepare the paired data following your own preset/license settings.
+
+- [MIT-Adobe FiveK Dataset](https://data.csail.mit.edu/graphics/fivek/)
+
+### Unsupervised Dataset
+
+For self-supervised refinement, we use diverse unpaired image datasets from multiple domains.
+
+Please download each dataset from its official source:
+
+- [Flickr2K](https://cv.snu.ac.kr/research/EDSR/Flickr2K.tar)
+- [DIV2K](https://data.vision.ee.ethz.ch/cvl/DIV2K/)
+- [LSDIR](https://github.com/ofsoundof/LSDIR)
+- [PPR10K](https://github.com/csjliang/PPR10K)
+- [Food-101](https://data.vision.ee.ethz.ch/cvl/datasets_extra/food-101/)
+- [Google Landmarks Dataset v2](https://github.com/cvdfoundation/google-landmark)
 
 ## 🏋️ Train
 will be updated
