@@ -86,11 +86,104 @@ Please download each dataset from its official source:
 
 
 ## 🏋️ Train
-will be updated
+CanonCGT is trained using **DP-CGT**, a dual-phase training strategy consisting of supervised preset learning and self-supervised refinement.
+
+### Phase 1: Supervised Preset Learning
+
+In Phase 1, CanonCGT is trained using the supervised paired dataset constructed from MIT-Adobe FiveK and Lightroom presets.  
+This phase learns the canonical pivot representation and the reference-based grading process from preset-based paired data.
+
+#### Phase 1-A: Style Encoder Training
+
+First, train the style encoder to extract grading style representations from preset-transformed images.
+
+```bash
+$ cd root/CanonCGT/
+$ python main.py \
+    --gpu 0 \
+    --yaml Stage1_style_encoder \
+    --host server \
+    --run_mode train
+```
+
+After training the style encoder, save the style centroids:
+
+```bash
+$ python main.py \
+    --gpu 0 \
+    --yaml Stage1_style_encoder \
+    --host server \
+    --run_mode test \
+    --load
+```
+
+#### Phase 1-B: Canonicalizer and Grader Training
+
+Next, train the canonicalizer and the grader using the supervised paired dataset.
+
+```bash
+$ python main.py \
+    --gpu 0 \
+    --yaml Stage1_canonicalizer \
+    --host server \
+    --run_mode train
+```
+
+```bash
+$ python main.py \
+    --gpu 0 \
+    --yaml Stage1_styler \
+    --host server \
+    --run_mode train
+```
+
+#### Phase 1-C: End-to-End Fine-tuning
+
+Then, fine-tune the full CanonCGT framework in an end-to-end manner.
+
+```bash
+$ python main.py \
+    --gpu 0 \
+    --yaml Stage2_end_to_end_finetuning \
+    --host server \
+    --run_mode train
+```
+
+### Phase 2: Self-Supervised Refinement
+
+In Phase 2, CanonCGT is further refined using unpaired image datasets.  
+This phase improves the generalization ability of CanonCGT to diverse real-world reference images beyond the preset-based supervised training data.
+
+```bash
+$ python main.py \
+    --gpu 0 \
+    --yaml Stage3_SSL_training_Flickr2K_PPR10K_LSDIR \
+    --host server \
+    --run_mode train
+```
+
+Alternatively, you can run the full training pipeline with:
+
+```bash
+$ bash run.sh
+```
 
 
 ## 🧪 Evaluation
-will be updated
+
+You can evaluate CanonCGT using a pretrained or trained model with:
+
+```bash
+$ python main.py \
+    --gpu 0 \
+    --yaml Stage3_SSL_training_Flickr2K_PPR10K_LSDIR \
+    --host server \
+    --run_mode eval \
+    --load \
+    --viz
+```
+
+The evaluation results and visualized outputs will be saved to the output directory specified in the corresponding configuration file.
 
 
 ## 🎨 Results
