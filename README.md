@@ -193,3 +193,14 @@ This repository, including the source code and pretrained weights, is released u
 
 Copyright 2026 Jinwon Ko.
 
+
+## Citation
+```BibTeX
+@inproceedings{ko2026canoncgt,
+  title={CanonCGT: Reference-Based Color Grading via Canonical Pivot Representation},
+  author={Ko, Jinwon and Ko, Keunsoo and Kim, Chang-Su},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  year={2026}
+}
+```
+
