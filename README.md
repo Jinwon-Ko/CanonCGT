@@ -186,3 +186,10 @@ The figure below shows our color grading results. For each pair, the left image 
 <img src="https://github.com/Jinwon-Ko/CanonCGT/blob/main/assets/More_results_CanonCGT.png" alt="results" width="100%" height="70%" border="10"/>
 
 
+
+## License
+
+This repository, including the source code and pretrained weights, is released under the Apache License 2.0.
+
+Copyright 2026 Jinwon Ko.
+
