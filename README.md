@@ -89,9 +89,9 @@ Please download each dataset from its official source:
 ## 🏋️ Train
 CanonCGT is trained using **DP-CGT**, a dual-phase training strategy consisting of supervised preset learning and self-supervised refinement.
 
-<img src="https://github.com/Jinwon-Ko/CanonCGT/blob/main/assets/Supervised_phase.png" alt="results" width="100%" height="70%" border="10"/>
-
 ### Phase 1: Supervised Preset Learning
+
+<img src="https://github.com/Jinwon-Ko/CanonCGT/blob/main/assets/Supervised_phase.png" alt="results" width="100%" height="70%" border="10"/>
 
 In Phase 1, CanonCGT is trained using the supervised paired dataset constructed from MIT-Adobe FiveK and Lightroom presets.  
 This phase learns the canonical pivot representation and the reference-based grading process from preset-based paired data.
@@ -147,9 +147,9 @@ $ python main.py \
     --run_mode train
 ```
 
-<img src="https://github.com/Jinwon-Ko/CanonCGT/blob/main/assets/Self-supervised_phase.png" alt="results" width="100%" height="70%" border="10"/>
-
 ### Phase 2: Self-Supervised Refinement
+
+<img src="https://github.com/Jinwon-Ko/CanonCGT/blob/main/assets/Self-supervised_phase.png" alt="results" width="100%" height="70%" border="10"/>
 
 In Phase 2, CanonCGT is further refined using unpaired image datasets.  
 This phase improves the generalization ability of CanonCGT to diverse real-world reference images beyond the preset-based supervised training data.
