@@ -63,20 +63,16 @@ We use both supervised paired data and unsupervised image collections for traini
 
 ### 1. Supervised Paired Dataset
 
-For supervised preset learning, we construct a paired dataset from the **MIT-Adobe FiveK** dataset.  
-Specifically, we use the Expert C version as the canonical target and generate preset-transformed images using Lightroom presets.
+For supervised preset learning, we construct a paired dataset from the **MIT-Adobe FiveK** dataset. Specifically, we use the Expert C version as the canonical target and generate preset-transformed images using Lightroom presets.
 
-Due to license restrictions, we do **not** redistribute the Lightroom presets or the generated paired dataset.  
-Instead, we provide the source links to the presets used in our experiments, so that users can download them directly from the original providers and follow their respective license terms.
+Due to license restrictions, we do **not** redistribute the Lightroom presets or the generated paired dataset. Instead, we provide the source links to the presets used in our experiments, so that users can download them directly from the original providers and follow their respective license terms.
 
 - [MIT-Adobe FiveK Dataset](https://data.csail.mit.edu/graphics/fivek/)
 - [Lightroom preset source links](./assets/lightroom_preset_links.md)
 
 ### 2. Unsupervised Dataset
 
-For self-supervised refinement, we use diverse unpaired image datasets from multiple domains.
-
-Please download each dataset from its official source:
+For self-supervised refinement, we use diverse unpaired image datasets from multiple domains. Please download each dataset from its official source:
 
 - [Flickr2K](https://cv.snu.ac.kr/research/EDSR/Flickr2K.tar)
 - [DIV2K](https://data.vision.ee.ethz.ch/cvl/DIV2K/)
